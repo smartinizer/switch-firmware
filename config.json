@@ -1,0 +1,24 @@
+{
+    "name": "Trigger",
+    "firmware": "https://trigger.smartinizer.devzero.cloud/firmware.bin",
+    "config-schema": [
+      {
+        "key": "trigger_pin",
+        "description": "The Pin that should trigger something, by sending a pulse-signal",
+        "format": "^[0-9]*$",
+        "default": "2"
+      },
+      {
+        "key": "topic",
+        "description": "Specifies the topic that will be subscribed to (currently only 'command' supported)",
+        "format": "^[a-z]+$",
+        "default": "command"
+      },
+      {
+        "key": "command",
+        "description": "Specifies the command that will trigger the action",
+        "format": "^[a-z]+$",
+        "default": "trigger"
+      }
+    ]
+  }
